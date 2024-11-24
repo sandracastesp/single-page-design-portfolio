@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF7F0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #030303;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav img {
+    width: 64x;
+    height: 64px;
+    aspect-ratio: 1;
+}
+
+.parte-uno p {
+    color: #7A746E;
+}
+
+#call-to-action {
+    background-color: #030303;
+    color: #FFF7F0;
+    text-decoration: none;
+    padding: 14px 45px;
+    border-radius: 1000px;
+}
+
+.text-content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+    margin-block-end: 22px;
+}
+
+.text-content p {
+    color: #7A746E;
+}
+
+.image-content {
+    display: flex;
+    gap: 24px;
+    margin: 80px 165px 146px 165px;
+}
+
+.image-content a {
+    aspect-ratio: 4/5;
+    background-color: #61C4B7;
+    border: #3d3d3d solid 1px;
+    flex-basis: 100%;
+}
