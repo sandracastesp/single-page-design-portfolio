@@ -1,3 +1,4 @@
+/* Inicio: Barra de navegación y hero */
 body {
     font-family: Arial, sans-serif;
     background-color: #FFF7F0;
@@ -11,6 +12,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    margin: 34px 165px 66px 165px
 }
 
 nav img {
@@ -26,6 +28,7 @@ nav img {
 #call-to-action {
     background-color: #030303;
     color: #FFF7F0;
+    font-size: 16px;
     text-decoration: none;
     padding: 14px 45px;
     border-radius: 1000px;
@@ -42,17 +45,99 @@ h1 {
 
 .text-content p {
     color: #7A746E;
+    font-size: 18px;
 }
 
+/* Final: Barra de navegación y hero */
+
+/* Inicio: contenedores de imagenes */
+
 .image-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 364px;
     gap: 24px;
     margin: 80px 165px 146px 165px;
+    justify-content: center;
+    
+}
+
+.image-content h2 {
+    color: #FFF7F0;
+    font-size: 24px;
+    padding: 10px;
 }
 
 .image-content a {
-    aspect-ratio: 4/5;
-    background-color: #61C4B7;
-    border: #3d3d3d solid 1px;
-    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
 }
+
+.graphic-content {
+    background-color: #755CDE;
+    border-radius: 10px;
+    grid-template-columns: 310px
+}
+
+.illustrations-content {
+    background-color: #EB7565;
+    border-radius: 10px;
+}
+
+.photography-content {
+    background-color: #61C4B7;
+    border-radius: 10px;
+}
+
+.graphic-content img {
+    width: 128px;
+    height: 192px;
+    padding: 24px;
+}
+
+.illustrations-content img {
+    width: 229px;
+    height: 114px;
+    padding: 24px;
+}
+
+.photography-content img {
+    width: 86px;
+    height: 218px;
+    padding: 24px;
+}
+
+/* Inicio: Presentación de Amy: imagen, texto, botón de enlace */
+.amy-presentation {
+    display: flex;
+    gap: 125px;
+    margin: 0px 160px 0px 170px;
+}
+
+.image-presentation img {
+    width: 445px;
+    height: 445px;
+}
+
+.text-presentation h1 {
+    font-size: 40px;
+}
+
+.text-presentation p {
+    color: #7A746E;
+    font-size: 18px;
+    margin: 34px 0px 32px 0px;
+}
+
+.text-presentation a {
+    background-color: #EB7565;
+    color: #FFF7F0;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 14px 45px;
+    border-radius: 1000px;
+}
+
+/* Final: Presentación de Amy: imagen, texto, botón de enlace */
