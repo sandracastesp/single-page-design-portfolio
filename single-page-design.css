@@ -1,24 +1,30 @@
-/* Inicio: Barra de navegación y hero */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    font-family: Arial, sans-serif;
     background-color: #FFF7F0;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #030303;
-    padding: 20px;
 }
 
-nav {
+p {
+    font-size: 1.125rem;
+}
+
+/* Inicio: Barra de navegación y hero */
+nav,
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    margin: 34px 165px 66px 165px
+    margin: 34px 100px 66px 100px
 }
 
-nav img {
-    width: 64x;
+a img {
+    width: 64px;
     height: 64px;
-    aspect-ratio: 1;
 }
 
 .parte-uno p {
@@ -28,24 +34,24 @@ nav img {
 #call-to-action {
     background-color: #030303;
     color: #FFF7F0;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     padding: 14px 45px;
     border-radius: 1000px;
 }
 
-.text-content {
+#hero {
     text-align: center;
+    margin: 0px 100px 0px 100px;
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-block-end: 22px;
 }
 
 .text-content p {
     color: #7A746E;
-    font-size: 18px;
 }
 
 /* Final: Barra de navegación y hero */
@@ -54,71 +60,77 @@ h1 {
 
 .image-content {
     display: grid;
-    grid-template-columns: 310px 310px 310px;
-    grid-template-rows: 364px;
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: 22.75rem;
+    gap: 1.5rem;
     margin: 80px 165px 146px 165px;
     justify-content: center;
-    
+
 }
 
 .image-content h2 {
     color: #FFF7F0;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 10px;
 }
 
 .image-content a {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-start;
     text-decoration: none;
 }
 
 .graphic-content {
     background-color: #755CDE;
+    background-image: url(./imagenes/image-content-1.png);
+    background-size: 128px 192px;
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
     border-radius: 10px;
-    grid-template-columns: 310px
 }
 
 .illustrations-content {
     background-color: #EB7565;
+    background-image: url(./imagenes/image-content-2.png);
+    background-size: 229px 110px;
+    background-repeat: no-repeat;
+    background-position: 85% 10%;
     border-radius: 10px;
 }
 
 .photography-content {
     background-color: #61C4B7;
+    background-image: url(./imagenes/image-content-3.png);
+    background-size: 86px 218px;
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
     border-radius: 10px;
-}
-
-.graphic-content img {
-    width: 128px;
-    height: 192px;
-    padding: 24px;
-}
-
-.illustrations-content img {
-    width: 229px;
-    height: 114px;
-    padding: 24px;
-}
-
-.photography-content img {
-    width: 86px;
-    height: 218px;
-    padding: 24px;
 }
 
 /* Inicio: Presentación de Amy: imagen, texto, botón de enlace */
 .amy-presentation {
     display: flex;
-    gap: 125px;
-    margin: 0px 160px 0px 170px;
+    gap: 5rem;
+    margin: 0px 160px 78px 170px;
+    max-width: 1000px;
+    min-width: 100px;
+    flex-wrap: wrap;
+}
+
+.image-presentation {
+    flex: 1 1 300px;
+}
+
+.text-presentation {
+    flex: 1 1 300px;
 }
 
 .image-presentation img {
-    width: 445px;
-    height: 445px;
+    width: 100%;
+    width: 400px;
+    height: 400px;
 }
 
 .text-presentation h1 {
@@ -127,7 +139,6 @@ h1 {
 
 .text-presentation p {
     color: #7A746E;
-    font-size: 18px;
     margin: 34px 0px 32px 0px;
 }
 
@@ -136,8 +147,105 @@ h1 {
     color: #FFF7F0;
     font-size: 16px;
     text-decoration: none;
-    padding: 14px 45px;
+    padding: 15px 30px;
     border-radius: 1000px;
 }
 
 /* Final: Presentación de Amy: imagen, texto, botón de enlace */
+
+/* Inicio de sección My Work */
+
+h3 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.amy-work {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(24.375rem, 1fr));
+    grid-auto-rows: 22.5rem;
+    gap: 56px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.images-work-1 {
+    background-color: #FFF7F0;
+    background-image: url(./imagenes/my-work-1.png);
+    background-size: 390px 360px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.images-work-2 {
+    background-color: #FFF7F0;
+    background-image: url(./imagenes/my-work-2.png);
+    background-size: 390px 360px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.images-work-3 {
+    background-color: #FFF7F0;
+    background-image: url(./imagenes/my-work-3.png);
+    background-size: 390px 360px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* Final de sección My Work */
+
+/* Inicio de Consultation */
+
+.consultation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 22.75rem;
+    gap: 1rem;
+    margin: 80px 165px 146px 165px;
+    justify-content: center;
+    background-color: #030303;
+}
+
+.text-consultation {
+    color: #FFF7F0;
+    margin: 100px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.text-consultation h1 {
+    font-size: 2.5rem;
+}
+
+.consultation-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultation-button a {
+    background-color: #EB7565;
+    padding: 15px 30px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    color: #FFF7F0;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Inicio de Text consultation */
+
+/* Inicio de Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 34px 100px 66px 100px
+}
