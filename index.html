@@ -8,25 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="movil.css">
     <title>single-page-design</title>
 </head>
 
 <body>
-    <!-- Nav para barra de navegación, etiqueta semantica -->
     <nav>
-        <!-- Logo enlaza a página principal "HOME"-->
-        <!-- ID para diferenciar porque hay 2 <a> en <nav>-->
-        <a class="logo" href="https://www.google.com.mx/" ><img src="./imagenes/logo.png">
+        <a class="logo" href="https://www.google.com.mx/"><img src="./imagenes/logo.png">
         </a>
-        <!-- Enlace con <a> porque al darle click mandará a otra página, botón si tiene acción en la misma página-->
-        <!--"Call to Action" (CTA) o "Llamado a la Acción" es un elemento que invita o incita a los usuarios a realizar una acción específica. Es común en diseño web y marketing digital y suele presentarse en forma de botones, enlaces, o frases que buscan que el usuario interactúe de alguna manera.  -->
         <a href="https://www.google.com.mx/" id="call-to-action"> Free Consultation
         </a>
     </nav>
-    <!-- Se le llama sección hero, sección pricipal de las páginas-->
     <section id="hero">
-        <!-- <div> se usará para hacer una separación entre el contenedor de texto e imágenes -->
         <div class="text-content">
             <h1>Design solutions made easy</h1>
             <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design
@@ -52,20 +45,18 @@
             <h1>I’m Amy, and I’d love to work on your next project</h1>
             <p>I love working with others to create beautiful design solutions. I’ve designed everything from brand
                 illustrations to complete mobile apps. I’m also handy with a camera!</p>
-            <a href="https://www.google.com.mx/"> Free Consultation </a>
+            <div class="button-consultation1">
+                <a href="https://www.google.com.mx/"> Free Consultation </a>
+            </div>
         </div>
     </section>
     <h3> My Work</h3>
     <section class="amy-work">
         <div class="images-work-1">
-            <!-- <image src="./imagenes/my-work-1.png" alt="my-work-1"></image>
-            <image src="./imagenes/my-work-2.png" alt="my-work-2"></image>
-            <image src="./imagenes/my-work-3.png" alt="my-work-3"></image> -->
         </div>
         <div class="images-work-2"> </div>
         <div class="images-work-3"> </div>
     </section>
-    <!-- Borro <section> y lo comabio por <div> -->
     <section class="consultation">
         <div class="consultation-container">
             <div class="text-consultation">
@@ -74,8 +65,7 @@
                     project
                     during a free consultation. Then we can move forward from there.</p>
             </div>
-            <!-- Borro un <div> y agrego clase a <a> -->
-            <div class="button-consultation">
+            <div class="button-consultation2">
                 <a href="https://www.google.com.mx/"> Free Consultation </a>
             </div>
         </div>
