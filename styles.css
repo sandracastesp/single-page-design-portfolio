@@ -22,7 +22,11 @@ footer {
     margin: 34px 100px 66px 100px
 }
 
-a img {
+.logo {
+    width: 100%;
+}
+
+.logo img {
     width: 64px;
     height: 64px;
 }
@@ -60,7 +64,7 @@ h1 {
 
 .image-content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-auto-rows: 22.75rem;
     gap: 1.5rem;
     margin: 80px 165px 146px 165px;
@@ -111,15 +115,18 @@ h1 {
 /* Inicio: Presentación de Amy: imagen, texto, botón de enlace */
 .amy-presentation {
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     margin: 0px 160px 78px 170px;
     max-width: 1000px;
     min-width: 100px;
     flex-wrap: wrap;
+    font-size: 1rem;
 }
 
 .image-presentation {
     flex: 1 1 300px;
+    width: 400px;
+    height: 400px;
 }
 
 .text-presentation {
@@ -128,23 +135,21 @@ h1 {
 
 .image-presentation img {
     width: 100%;
-    width: 400px;
-    height: 400px;
 }
 
 .text-presentation h1 {
-    font-size: 40px;
+    font-size: 2.5em;
 }
-
 .text-presentation p {
     color: #7A746E;
     margin: 34px 0px 32px 0px;
+    max-width: 30ch;
 }
 
 .text-presentation a {
     background-color: #EB7565;
     color: #FFF7F0;
-    font-size: 16px;
+    font-size: 1em;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 1000px;
